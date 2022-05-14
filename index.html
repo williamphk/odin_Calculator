@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Calculator</h1>
+      <h2 id="display">0</h2>
+      <div class="container">
+        <button style="font-size: 20px">%</button>
+        <button style="font-size: 20px">CE</button>
+        <button style="font-size: 20px" class="C" id="clearBtn" onclick="reset()">C</button>
+        <button class="operator" id="divideBtn" onclick="operate('÷')">÷</button>
+        <button class="num" onclick="displayNum(1)">1</button>
+        <button class="num" onclick="displayNum(2)">2</button>
+        <button class="num" onclick="displayNum(3)">3</button>
+        <button class="operator" id="multiplyBtn" onclick="operate('x')">×</button>
+        <button class="num" onclick="displayNum(4)">4</button>
+        <button class="num" onclick="displayNum(5)">5</button>
+        <button class="num" onclick="displayNum(6)">6</button>
+        <button class="operator" id="subtractBtn" onclick="operate('-')">-</button>
+        <button class="num" onclick="displayNum(7)">7</button>
+        <button class="num" onclick="displayNum(8)">8</button>
+        <button class="num" onclick="displayNum(9)">9</button>
+        <button class="operator" id="addBtn" onclick="operate('+')">+</button>
+        <button class="num zero" onclick="displayNum(0)">0</button>
+        <button style="font-size: 30px" onclick="displayNum('.')">.</button>
+        <button class="operator" id="equalBtn" onclick="operate('=')">=</button>
+
+        <script src="script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
