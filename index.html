@@ -9,17 +9,20 @@
   </head>
   <body>
     <div class="main">
-      <h1>Calculator</h1>
-      <h2 id="display">0</h2>
+      <h1 class="title">Calculator</h1>
+      <div class="display">
+        <h5 class="subDisplay" id="subDisplay"></h5>
+        <h2 class="mainDisplay" id="mainDisplay">0</h2>
+      </div>
       <div class="container">
         <button style="font-size: 20px">%</button>
-        <button style="font-size: 20px">CE</button>
+        <button style="font-size: 20px">De</button>
         <button style="font-size: 20px" class="C" id="clearBtn" onclick="reset()">C</button>
         <button class="operator" id="divideBtn" onclick="operate('÷')">÷</button>
         <button class="num" onclick="displayNum(1)">1</button>
         <button class="num" onclick="displayNum(2)">2</button>
         <button class="num" onclick="displayNum(3)">3</button>
-        <button class="operator" id="multiplyBtn" onclick="operate('x')">×</button>
+        <button class="operator" id="multiplyBtn" onclick="operate('x')">x</button>
         <button class="num" onclick="displayNum(4)">4</button>
         <button class="num" onclick="displayNum(5)">5</button>
         <button class="num" onclick="displayNum(6)">6</button>
