@@ -50,7 +50,7 @@ html {
 .mainDisplay {
   margin: 0px;
   padding: 0px;
-  font-size: calc(15px + 2vw);
+  font-size: calc(7px + 1vw);
   color: aliceblue;
   font-family: digital-7;
 }
