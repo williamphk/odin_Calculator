@@ -38,32 +38,36 @@ function operate(operator) {
     console.log("operator3", num1, num2, sign);
     switch (sign) {
       case "+":
-        if (subDisplay.innerHTML.indexOf("+") > -1) {
+        if (subDisplay.innerHTML.slice(-1) === "+") {
           subDisplay.innerHTML += ``;
         } else {
           subDisplay.innerHTML += `${sign}`;
         }
+        add();
         break;
       case "-":
-        if (subDisplay.innerHTML.indexOf("-") > -1) {
+        if (subDisplay.innerHTML.slice(-1) === "-") {
           subDisplay.innerHTML += ``;
         } else {
           subDisplay.innerHTML += `${sign}`;
         }
+        subtract();
         break;
       case "x":
-        if (subDisplay.innerHTML.indexOf("x") > -1) {
+        if (subDisplay.innerHTML.slice(-1) === "x") {
           subDisplay.innerHTML += ``;
         } else {
           subDisplay.innerHTML += `${sign}`;
         }
+        multiply();
         break;
       case "÷":
-        if (subDisplay.innerHTML.indexOf("÷") > -1) {
+        if (subDisplay.innerHTML.slice(-1) === "÷") {
           subDisplay.innerHTML += ``;
         } else {
           subDisplay.innerHTML += `${sign}`;
         }
+        divide();
         break;
     }
     num2 = "";
@@ -104,7 +108,7 @@ function divide() {
   if (num1 == "0" && num2 == "0") {
     mainDisplay.innerHTML = "Undefined";
   } else if (num2 == "0") {
-    mainDisplay.innerHTML = "Cannot divide by 0";
+    mainDisplay.innerHTML = "<font size='6'>Cannot divide by 0</font>";
   } else {
     num1 /= Number(num2);
     if (String(num1).length > 10) {
