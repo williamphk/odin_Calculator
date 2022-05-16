@@ -50,7 +50,8 @@ function operate(operator) {
           subDisplay.innerHTML.slice(-1) === "x" ||
           subDisplay.innerHTML.slice(-1) === "÷"
         ) {
-          subDisplay.innerHTML = `${sign}`;
+          subDisplay.innerHTML = subDisplay.innerHTML.slice(0, -1);
+          subDisplay.innerHTML += `${sign}`;
         } else {
           subDisplay.innerHTML += `${sign}`;
         }
@@ -64,7 +65,8 @@ function operate(operator) {
           subDisplay.innerHTML.slice(-1) === "x" ||
           subDisplay.innerHTML.slice(-1) === "÷"
         ) {
-          subDisplay.innerHTML = `${sign}`;
+          subDisplay.innerHTML = subDisplay.innerHTML.slice(0, -1);
+          subDisplay.innerHTML += `${sign}`;
         } else {
           subDisplay.innerHTML += `${sign}`;
         }
@@ -79,7 +81,8 @@ function operate(operator) {
           subDisplay.innerHTML.slice(-1) === "-" ||
           subDisplay.innerHTML.slice(-1) === "÷"
         ) {
-          subDisplay.innerHTML = `${sign}`;
+          subDisplay.innerHTML = subDisplay.innerHTML.slice(0, -1);
+          subDisplay.innerHTML += `${sign}`;
           console.log("operator3xx", num1, num2, sign);
         } else {
           subDisplay.innerHTML += `${sign}`;
@@ -95,7 +98,8 @@ function operate(operator) {
           subDisplay.innerHTML.slice(-1) === "-" ||
           subDisplay.innerHTML.slice(-1) === "x"
         ) {
-          subDisplay.innerHTML = `${sign}`;
+          subDisplay.innerHTML = subDisplay.innerHTML.slice(0, -1);
+          subDisplay.innerHTML += `${sign}`;
         } else {
           subDisplay.innerHTML += `${sign}`;
           divide();
